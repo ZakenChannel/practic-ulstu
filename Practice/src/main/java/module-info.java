@@ -12,9 +12,11 @@ module ru.practice {
     exports ru.practice.thirdpractice;
     exports ru.practice.fourthpractice;
     exports ru.practice.fifthpractice;
+    exports ru.practice.sixthpractice;
     opens ru.practice.firstpractice to javafx.fxml;
     opens ru.practice.secondpractice to javafx.fxml;
     opens ru.practice.thirdpractice to javafx.fxml;
     opens ru.practice.fourthpractice to javafx.fxml;
     opens ru.practice.fifthpractice to javafx.fxml;
+    opens ru.practice.sixthpractice to javafx.fxml;
 }
