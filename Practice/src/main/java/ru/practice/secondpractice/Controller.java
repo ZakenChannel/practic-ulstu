@@ -176,9 +176,9 @@ public class Controller extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ru/practice/secondPracticeForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ru/practice/SecondPracticeForm.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Second practice");
+        stage.setTitle("Practice");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
