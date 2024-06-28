@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0"
+            prefWidth="852.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.practice.firstpractice.Controller">
+    <SplitPane dividerPositions="0.20705882352941177" prefHeight="482.0" prefWidth="852.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <Button layoutX="34.0" layoutY="31.0" mnemonicParsing="false" onAction="#buttonTaskClick"
+                    text="Первое задание"/>
+            <Button layoutX="37.0" layoutY="88.0" mnemonicParsing="false" onAction="#buttonTaskClick"
+                    text="Второе задание"/>
+            <Button layoutX="36.0" layoutY="137.0" mnemonicParsing="false" onAction="#buttonTaskClick"
+                    text="Третье задание"/>
+            <Button layoutX="26.0" layoutY="180.0" mnemonicParsing="false" onAction="#buttonTaskClick"
+                    text="Четвертое задание"/>
+            <Button layoutX="38.0" layoutY="225.0" mnemonicParsing="false" onAction="#buttonTaskClick"
+                    text="Пятое задание"/>
+            <Button layoutX="35.0" layoutY="271.0" mnemonicParsing="false" onAction="#buttonTaskClick"
+                    text="Шестое задание"/>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="513.0">
+            <Button layoutX="435.0" layoutY="385.0" mnemonicParsing="false" onAction="#initArray"
+                    text="Одномерный"/>
+            <Button layoutX="564.0" layoutY="385.0" mnemonicParsing="false" onAction="#initArray"
+                    text="Двумерный"/>
+            <TextArea fx:id="textOut" editable="false" layoutX="433.0" layoutY="258.0" prefHeight="120.0"
+                      prefWidth="213.0" wrapText="true"/>
+            <TextField fx:id="firstCount" layoutX="480.0" layoutY="47.0" prefHeight="25.0" prefWidth="53.0"/>
+            <Label layoutX="476.0" layoutY="23.0" text="Введите размерность"/>
+            <TextField fx:id="secondCount" layoutX="539.0" layoutY="47.0" prefHeight="25.0" prefWidth="53.0"/>
+            <TextField fx:id="enterArray" layoutX="412.0" layoutY="121.0" prefHeight="25.0" prefWidth="237.0"/>
+            <Label layoutX="484.0" layoutY="97.0" text="Введите массив"/>
+            <Label layoutX="481.0" layoutY="198.0" text="Диапазон значений"/>
+            <TextField fx:id="numberFrom" layoutX="478.0" layoutY="222.0" prefHeight="25.0" prefWidth="53.0"/>
+            <TextField fx:id="numberTo" layoutX="541.0" layoutY="222.0" prefHeight="25.0" prefWidth="53.0"/>
+            <Label fx:id="textOfTask" alignment="TOP_LEFT" layoutX="14.0" layoutY="23.0" prefHeight="185.0"
+                   prefWidth="355.0" wrapText="true"/>
+            <Button layoutX="477.0" layoutY="422.0" mnemonicParsing="false" onAction="#executeTask"
+                    prefHeight="25.0" prefWidth="129.0" text="Выполнить"/>
+            <Label fx:id="result" alignment="TOP_LEFT" layoutX="15.0" layoutY="212.0" prefHeight="240.0"
+                   prefWidth="355.0" wrapText="true"/>
+            <Button layoutX="393.0" layoutY="153.0" mnemonicParsing="false" onAction="#initArray"
+                    prefHeight="25.0" prefWidth="142.0" text="Создать одномерный"/>
+            <Button layoutX="541.0" layoutY="153.0" mnemonicParsing="false" onAction="#initArray"
+                    text="Создать двумерный"/>
+        </AnchorPane>
+    </SplitPane>
+</AnchorPane>

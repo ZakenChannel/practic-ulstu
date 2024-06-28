@@ -6,5 +6,6 @@ module ru.practice {
     requires com.dlsc.formsfx;
 
     opens ru.practice to javafx.fxml;
-    exports ru.practice;
+    exports ru.practice.firstpractice;
+    opens ru.practice.firstpractice to javafx.fxml;
 }
