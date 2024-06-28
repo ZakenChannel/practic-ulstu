@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0"
+            prefWidth="904.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.practice.secondpractice.Controller">
+   <SplitPane dividerPositions="0.3203991130820399, 0.7073170731707317" prefHeight="400.0" prefWidth="600.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <TextArea editable="false" layoutX="1.0" prefHeight="185.0" prefWidth="286.0"
+                   text="Реализовать абстрактный тип данных очередь на основе структуры данных двусвязный список.&#10;Подобно стекам, очередь — хранит элемент последовательным образом. Существенное отличие от стека – использование FIFO (First in First Out) вместо LIFO."
+                   wrapText="true" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="1.0"
+                   AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </TextArea>
+         <Button layoutX="14.0" layoutY="191.0" mnemonicParsing="false" onAction="#buttonQueueClicked"
+                 prefHeight="34.0" prefWidth="105.0" text="Добавить" AnchorPane.bottomAnchor="250.0"
+                 AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="191.0"/>
+         <Button layoutX="167.0" layoutY="191.0" mnemonicParsing="false" onAction="#buttonQueueClicked"
+                 prefHeight="34.0" prefWidth="105.0" text="Удалить" AnchorPane.bottomAnchor="250.0"
+                 AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="191.0"/>
+         <Button layoutX="91.0" layoutY="238.0" mnemonicParsing="false" onAction="#buttonQueueClicked"
+                 prefHeight="34.0" prefWidth="105.0" text="Вывести" AnchorPane.bottomAnchor="203.0"
+                 AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="238.0"/>
+         <TextArea fx:id="areaOutput" editable="false" layoutY="278.0" prefHeight="195.0" prefWidth="292.0"
+                   wrapText="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="278.0">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </TextArea>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <TextArea editable="false" layoutX="-2.0" layoutY="-1.0" prefHeight="164.0" prefWidth="349.0"
+                   text="Алгоритм – Придурковатая сортировка&#10;Алгоритм Stooge sort заключается в следующем:&#10;1) Если значение элемента в конце списка меньше, чем значение элемента в начале, то поменять их местами.&#10;2) Если есть 3 или более элементов в текущем подмножестве списка, то:&#10;    2.1 Рекурсивно вызвать сортировку для первых 2/3 списка&#10;    2.2 Рекурсивно вызвать сортировку для последних 2/3 списка&#10;    2.3 Рекурсивно вызвать сортировку для первых 2/3 списка снова&#10;3) Иначе: конец подпрограммы."
+                   wrapText="true" AnchorPane.bottomAnchor="312.0" AnchorPane.leftAnchor="-2.0"
+                   AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="-1.0">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </TextArea>
+         <Button layoutX="3.0" layoutY="227.0" mnemonicParsing="false" onAction="#buttonSortClicked"
+                 prefHeight="34.0" prefWidth="337.0" text="Сгенерировать массив" AnchorPane.bottomAnchor="214.0"
+                 AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="227.0"/>
+         <TextArea fx:id="areaGeneratingArray" editable="false" layoutX="-3.0" layoutY="170.0" prefHeight="44.0"
+                   prefWidth="349.0" wrapText="true" AnchorPane.bottomAnchor="257.0" AnchorPane.leftAnchor="-3.0"
+                   AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="170.0">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </TextArea>
+         <Button layoutX="3.0" layoutY="310.0" mnemonicParsing="false" onAction="#buttonSortClicked"
+                 prefHeight="25.0" prefWidth="163.0" text="Следующий шаг" AnchorPane.bottomAnchor="140.0"
+                 AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="177.0" AnchorPane.topAnchor="310.0"/>
+         <Button layoutX="177.0" layoutY="310.0" mnemonicParsing="false" onAction="#buttonSortClicked"
+                 prefHeight="25.0" prefWidth="163.0" text="Предыдущий шаг" AnchorPane.bottomAnchor="140.0"
+                 AnchorPane.leftAnchor="177.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="310.0"/>
+         <Button layoutX="3.0" layoutY="268.0" mnemonicParsing="false" onAction="#buttonSortClicked"
+                 prefHeight="34.0" prefWidth="337.0" text="Сортировать" AnchorPane.bottomAnchor="173.0"
+                 AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="268.0"/>
+         <Canvas fx:id="canvas" height="129.0" layoutY="346.0" width="343.0" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="346.0"/>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <TextArea editable="false" prefHeight="185.0" prefWidth="261.0"
+                   text="Расстояние Левенштейна, или редакционное расстояние, — метрика cходства между двумя строковыми последовательностями. Чем больше расстояние, тем более различны строки. Для двух одинаковых последовательностей расстояние равно нулю. По сути, это минимальное число односимвольных преобразований (удаления, вставки или замены), необходимых, чтобы превратить одну последовательность в другую."
+                   wrapText="true" AnchorPane.bottomAnchor="291.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <font>
+               <Font size="15.0"/>
+            </font>
+         </TextArea>
+         <TextField fx:id="firstTextField" layoutX="14.0" layoutY="202.0" prefHeight="25.0" prefWidth="105.0"
+                    AnchorPane.bottomAnchor="249.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="142.0"
+                    AnchorPane.topAnchor="202.0"/>
+         <TextField fx:id="secondTextField" layoutX="14.0" layoutY="244.0" prefHeight="25.0" prefWidth="105.0"
+                    AnchorPane.bottomAnchor="207.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="142.0"
+                    AnchorPane.topAnchor="244.0"/>
+         <Label layoutX="124.0" layoutY="201.0" text="— первая строка" AnchorPane.bottomAnchor="249.0"
+                AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="201.0">
+            <font>
+               <Font size="17.0"/>
+            </font>
+         </Label>
+         <Label layoutX="124.0" layoutY="244.0" text="— вторая строка" AnchorPane.bottomAnchor="206.0"
+                AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="244.0">
+            <font>
+               <Font size="17.0"/>
+            </font>
+         </Label>
+         <TextArea fx:id="areaOfResult" editable="false" layoutY="347.0" prefHeight="129.0" prefWidth="261.0"
+                   wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="347.0">
+            <font>
+               <Font size="13.0"/>
+            </font>
+         </TextArea>
+         <Button layoutX="14.0" layoutY="287.0" mnemonicParsing="false" onAction="#calculateDistance"
+                 prefHeight="34.0" prefWidth="241.0" text="Вычислить расстояние" AnchorPane.bottomAnchor="155.0"
+                 AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="287.0"/>
+      </AnchorPane>
+   </SplitPane>
+</AnchorPane>

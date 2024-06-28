@@ -7,5 +7,7 @@ module ru.practice {
 
     opens ru.practice to javafx.fxml;
     exports ru.practice.firstpractice;
+    exports ru.practice.secondpractice;
     opens ru.practice.firstpractice to javafx.fxml;
+    opens ru.practice.secondpractice to javafx.fxml;
 }
